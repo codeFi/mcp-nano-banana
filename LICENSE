@@ -1,6 +1,10 @@
 MIT License
 
+<<<<<<< HEAD
 Copyright (c) 2026 Razvan Tanase
+=======
+Copyright (c) 2025 codeFi
+>>>>>>> 8658113 (feat: Initial release - mcp-nano-banana v1.2.0)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
