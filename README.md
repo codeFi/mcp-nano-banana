@@ -40,6 +40,23 @@ For MCP Registry publication metadata, the registry name is `io.github.codeFi/mc
 
 ## MCP Configuration
 
+### Codex
+
+```bash
+codex mcp add nano-banana --env GEMINI_API_KEY=your-api-key -- npx -y mcp-nano-banana@latest
+```
+
+Or add manually to `~/.codex/config.toml`:
+
+```toml
+[mcp_servers.nano-banana]
+command = "npx"
+args = ["-y", "mcp-nano-banana@latest"]
+
+[mcp_servers.nano-banana.env]
+GEMINI_API_KEY = "your-api-key"
+```
+
 ### Qwen Code
 
 Add to `~/.qwen/settings.json`:
@@ -65,6 +82,24 @@ claude mcp add nano-banana -e GEMINI_API_KEY=your-api-key -- npx -y mcp-nano-ban
 ```
 
 Or add manually to `~/.claude/claude_desktop_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "nano-banana": {
+      "command": "npx",
+      "args": ["-y", "mcp-nano-banana@latest"],
+      "env": {
+        "GEMINI_API_KEY": "your-api-key"
+      }
+    }
+  }
+}
+```
+
+### Other MCP Clients
+
+For CLIs and desktop clients that use the standard `mcpServers` JSON format, register:
 
 ```json
 {
