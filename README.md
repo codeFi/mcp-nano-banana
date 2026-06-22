@@ -2,7 +2,7 @@
 
 MCP server for AI-powered image generation using Google Gemini Nano Banana models. Generate, edit, and combine images from text prompts — directly from your AI coding assistant.
 
-![npm version](https://img.shields.io/badge/version-1.2.0-blue.svg)
+![npm version](https://img.shields.io/badge/version-1.2.1-blue.svg)
 ![license](https://img.shields.io/badge/license-MIT-green.svg)
 
 ## Features
