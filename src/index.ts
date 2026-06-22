@@ -12,6 +12,7 @@ import { extname, join } from "path";
 import JSZip from "jszip";
 import pngToIco from "png-to-ico";
 import sharp from "sharp";
+import packageJson from "../package.json" with { type: "json" };
 
 const GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models";
 
@@ -399,7 +400,7 @@ export async function generateImage(
 const server = new Server(
   {
     name: "mcp-nano-banana",
-    version: "1.0.0",
+    version: packageJson.version,
   },
   {
     capabilities: {

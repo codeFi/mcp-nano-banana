@@ -36,6 +36,8 @@ Set your API key:
 export GEMINI_API_KEY=your-api-key
 ```
 
+For MCP Registry publication metadata, the registry name is `io.github.codefi/mcp-nano-banana`.
+
 ## MCP Configuration
 
 ### Qwen Code
@@ -281,6 +283,27 @@ npm test
 
 # Run the server directly
 node dist/index.js
+```
+
+## Release
+
+First release flow:
+
+1. Update the version in `package.json` and keep `server.json` in sync.
+2. Commit, tag the release as `v<version>`, and push the tag.
+3. Let GitHub Actions publish the npm package with `NPM_TOKEN`.
+4. If you need to regenerate registry scaffolding, run `mcp-publisher init`; otherwise validate the existing `server.json`.
+5. Authenticate locally with `mcp-publisher login github`.
+6. Publish to the MCP Registry with `mcp-publisher publish`.
+7. Verify npm and MCP Registry resolution after publish.
+
+Quick checks:
+
+```bash
+npm test
+npm run build
+npm pack --dry-run
+curl "https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.codefi/mcp-nano-banana"
 ```
 
 ## Troubleshooting

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.codefi/mcp-nano-banana",
+  "description": "MCP server for Google Nano Banana (Gemini) image generation",
+  "repository": {
+    "url": "https://github.com/codeFi/mcp-nano-banana",
+    "source": "github"
+  },
+  "version": "1.2.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "mcp-nano-banana",
+      "version": "1.2.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GEMINI_API_KEY",
+          "description": "Google Gemini API key used for image generation requests.",
+          "required": true
+        }
+      ]
+    }
+  ]
+}
