@@ -2,7 +2,7 @@
 
 MCP server for AI-powered image generation using Google Gemini Nano Banana models. Generate, edit, and combine images from text prompts — directly from your AI coding assistant.
 
-![npm version](https://img.shields.io/badge/version-1.2.1-blue.svg)
+![npm version](https://img.shields.io/badge/version-1.2.2-blue.svg)
 ![license](https://img.shields.io/badge/license-MIT-green.svg)
 
 ## Features
@@ -36,7 +36,7 @@ Set your API key:
 export GEMINI_API_KEY=your-api-key
 ```
 
-For MCP Registry publication metadata, the registry name is `io.github.codefi/mcp-nano-banana`.
+For MCP Registry publication metadata, the registry name is `io.github.codeFi/mcp-nano-banana`.
 
 ## MCP Configuration
 
@@ -303,7 +303,7 @@ Quick checks:
 npm test
 npm run build
 npm pack --dry-run
-curl "https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.codefi/mcp-nano-banana"
+curl "https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.codeFi/mcp-nano-banana"
 ```
 
 ## Troubleshooting
