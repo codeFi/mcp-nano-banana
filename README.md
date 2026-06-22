@@ -285,33 +285,6 @@ npm test
 node dist/index.js
 ```
 
-## Release
-
-Release flow:
-
-1. Update the version in `package.json` and `server.json`.
-2. Confirm `package.json` `mcpName` and `server.json` `name` both equal `io.github.codeFi/mcp-nano-banana`.
-3. Commit and push `main`.
-4. Create and push the release tag as `v<version>`.
-5. Let GitHub Actions publish the npm package with `NPM_TOKEN`.
-6. Verify npm metadata before registry publish:
-   - `npm view mcp-nano-banana version`
-   - `npm view mcp-nano-banana mcpName`
-7. Authenticate locally with `mcp-publisher login github`.
-8. Publish to the MCP Registry with `mcp-publisher publish`.
-9. Verify npm and MCP Registry resolution after publish.
-
-Quick checks:
-
-```bash
-npm test
-npm run build
-npm pack --dry-run
-npm view mcp-nano-banana version
-npm view mcp-nano-banana mcpName
-curl "https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.codeFi/mcp-nano-banana"
-```
-
 ## Troubleshooting
 
 | Issue | Solution |
