@@ -206,7 +206,7 @@ Generate or edit images from text prompts.
   "prompt": "A sunset over mountains with dramatic lighting",
   "aspectRatio": "16:9",
   "resolution": "2K",
-  "outputPath": "/Users/razvan/Desktop/sunset.png"
+  "outputPath": "/Users/currentUser/Desktop/sunset.png"
 }
 ```
 
@@ -214,8 +214,8 @@ Generate or edit images from text prompts.
 ```json
 {
   "prompt": "Change the background to a coffee shop interior",
-  "imagePaths": ["/Users/razvan/photo.jpg"],
-  "outputPath": "/Users/razvan/edited.png"
+  "imagePaths": ["/Users/currentUser/photo.jpg"],
+  "outputPath": "/Users/currentUser/edited.png"
 }
 ```
 
